@@ -7,3 +7,7 @@ This is part of a messaging module, the primary function of this class is to bui
 ## SantiagoAndroid.java
 
 This module handles requests to the home server for information (such as user details) or new messages from the server.
+
+## ConversationListFragment.java
+
+This module showcases some examples of android functionality. Also functions to dynamically generate content for a view (Loading conversations into a list view based on array entities).
