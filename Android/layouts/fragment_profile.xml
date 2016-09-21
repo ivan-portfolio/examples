@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/grey" >
+
+    
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+        
+        android:src="@drawable/default_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        
+        android:text="name"
+        android:textSize="@dimen/text_large"
+        />
+    
+    <!-- email -->
+    <LinearLayout
+	    android:id="@+id/email_block"
+	    style="@style/profile_block"
+	    android:layout_below="@id/name" >
+	    <TextView
+	        android:id="@+id/email_label"
+	        style="@style/profile_label"
+	        android:text="@string/email"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/email_info"
+			style="@style/profile_info"
+	        android:text="@string/placeholder"
+	        />
+	</LinearLayout>
+
+	<View 
+		android:layout_alignTop="@id/email_block"
+	    style="@style/profile_div1"
+	    />
+	
+	<View 
+		android:layout_alignBottom="@id/email_block"
+	    style="@style/profile_div2"
+	    />
+	
+	<!-- phone -->
+	<LinearLayout
+	    android:id="@+id/phone_block"
+	    style="@style/profile_block"
+	    android:layout_below="@id/email_block" >
+	    <TextView
+	        android:id="@+id/phone_label"
+	        style="@style/profile_label"
+	        android:text="@string/phone"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/phone_info"
+			style="@style/profile_info"
+	        android:text="@string/placeholder"
+	        />
+	</LinearLayout>
+	
+	<View 
+		android:layout_alignBottom="@id/phone_block"
+	    style="@style/profile_div2"
+	    />
+
+	<!-- skype -->
+	<LinearLayout
+	    android:id="@+id/skype_block"
+	    style="@style/profile_block"
+	    android:layout_below="@id/phone_block" >
+	    <TextView
+	        android:id="@+id/skype_label"
+	        style="@style/profile_label"
+	        android:text="@string/skype"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/skype_info"
+			style="@style/profile_info"
+	        android:text="@string/placeholder"
+	        />
+	</LinearLayout>
+	
+	<View 
+		android:layout_alignBottom="@id/skype_block"
+	    style="@style/profile_div1"
+	    />
+	
+	<View android:layout_below="@id/skype_block"
+	    android:id="@+id/div_1"
+	    style="@style/profile_block_div"/>
+	
+	<!-- age -->
+    <LinearLayout
+	    android:id="@+id/age_block"
+	    style="@style/profile_block"
+	    android:layout_below="@id/div_1" >
+	    <TextView
+	        android:id="@+id/age_label"
+	        style="@style/profile_label"
+	        android:text="@string/age"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/age_info"
+			style="@style/profile_info"
+	        android:text="@string/placeholder"
+	        />
+	</LinearLayout>
+
+	<View 
+		android:layout_alignTop="@id/age_block"
+	    style="@style/profile_div1"
+	    />
+	
+	<View 
+		android:layout_alignBottom="@id/age_block"
+	    style="@style/profile_div2"
+	    />
+	
+	<!-- gender -->
+	<LinearLayout
+	    android:id="@+id/gender_block"
+	    style="@style/profile_block"
+	    android:layout_below="@id/age_block" >
+	    <TextView
+	        android:id="@+id/gender_label"
+	        style="@style/profile_label"
+	        android:text="@string/gender"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/gender_info"
+			style="@style/profile_info"
+	        android:text="@string/placeholder"
+	        />
+	</LinearLayout>
+	
+	<View 
+		android:layout_alignBottom="@id/gender_block"
+	    style="@style/profile_div1"
+	    />
+	
+	<View android:layout_below="@id/gender_block"
+	    android:id="@+id/div_2"
+	    style="@style/profile_block_div"/>
+
+	<!-- street -->
+    <LinearLayout
+	    android:id="@+id/street_block"
+	    style="@style/profile_block"
+	    android:layout_below="@id/div_2" >
+	    <TextView
+	        android:id="@+id/street_label"
+	        style="@style/profile_label"
+	        android:text="@string/street"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/street_info"
+			style="@style/profile_info"
+	        android:text="@string/placeholder"
+	        />
+	</LinearLayout>
+
+	<View 
+		android:layout_alignTop="@id/street_block"
+	    style="@style/profile_div1"
+	    />
+	
+	<View 
+		android:layout_alignBottom="@id/street_block"
+	    style="@style/profile_div2"
+	    />
+	
+	<!-- suburb -->
+	<LinearLayout
+	    android:id="@+id/suburb_block"
+	    style="@style/profile_block"
+	    android:layout_below="@id/street_block" >
+	    <TextView
+	        android:id="@+id/suburb_label"
+	        style="@style/profile_label"
+	        android:text="@string/suburb"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/suburb_info"
+			style="@style/profile_info"
+	        android:text="@string/placeholder"
+	        />
+	</LinearLayout>
+	
+	<View 
+		android:layout_alignBottom="@id/suburb_block"
+	    style="@style/profile_div2"
+	    />
+
+	<!-- state -->
+	<LinearLayout
+	    android:id="@+id/state_block"
+	    style="@style/profile_block"
+	    android:layout_below="@id/suburb_block" >
+	    <TextView
+	        android:id="@+id/state_label"
+	        style="@style/profile_label"
+	        android:text="@string/state"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/state_info"
+			style="@style/profile_info"
+	        android:text="@string/placeholder"
+	        />
+	</LinearLayout>
+	
+	<View 
+		android:layout_alignBottom="@id/state_block"
+	    style="@style/profile_div2"
+	    />
+	
+	<!-- post -->
+	<LinearLayout
+	    android:id="@+id/post_block"
+	    style="@style/profile_block"
+	    android:layout_below="@id/state_block" >
+	    <TextView
+	        android:id="@+id/post_label"
+	        style="@style/profile_label"
+	        android:text="@string/postcode"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/post_info"
+			style="@style/profile_info"
+	        android:text="@string/placeholder"
+	        />
+	</LinearLayout>
+	
+	<View 
+		android:layout_alignBottom="@id/post_block"
+	    style="@style/profile_div2"
+	    />
+	
+	<!-- country -->
+	<LinearLayout
+	    android:id="@+id/country_block"
+	    style="@style/profile_block"
+	    android:layout_below="@id/post_block" >
+	    <TextView
+	        android:id="@+id/country_label"
+	        style="@style/profile_label"
+	        android:text="@string/country"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/country_info"
+			style="@style/profile_info"
+	        android:text="@string/placeholder"
+	        />
+	</LinearLayout>
+	
+	<View 
+		android:layout_alignBottom="@id/country_block"
+	    style="@style/profile_div1"
+	    />
+	
+	<View android:layout_below="@id/country_block"
+	    android:id="@+id/div_3"
+	    style="@style/profile_block_div"/>
+	
+	<TextView 
+	    android:id="@+id/signout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/div_3"
+	    
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:background="@color/white"
+	    android:gravity="center"
+	    android:text="@string/signout"
+	    android:textColor="@color/text_red"/>
+	
+	<View 
+		android:layout_alignTop="@id/signout"
+	    style="@style/profile_div1"
+	    />
+	
+	<View 
+		android:layout_alignBottom="@id/signout"
+	    style="@style/profile_div1"
+	    />
+	
+	<View 
+	    android:layout_below="@id/signout"
+	    style="@style/profile_block_div"
+	    android:layout_height="30dp" />
+	
+</RelativeLayout>
+</ScrollView>
