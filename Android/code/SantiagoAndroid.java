@@ -269,19 +269,19 @@ public class SantiagoAndroid {
 		
 		//execute async-request
 		RequestTask task = new ProgressRequestTask(c, label, JbhResponse.RESPONSE_LOGIN);
-	    task.execute(request);
+	    	task.execute(request);
 	    
 	}
 	
 	private Request buildLoginRequest(String url, String username, String password) {
 		Request request = new Request(Verb.POST, url);
 		request.addBodyParameter(OAuthConstants.CLIENT_ID, JobinhoodApi.client_id);
-	    request.addBodyParameter(OAuthConstants.CLIENT_SECRET, JobinhoodApi.client_secret);
-	    request.addBodyParameter("grant_type", "password");
-	    request.addBodyParameter("username", username);
-	    request.addBodyParameter("password", password);
+	    	request.addBodyParameter(OAuthConstants.CLIENT_SECRET, JobinhoodApi.client_secret);
+	    	request.addBodyParameter("grant_type", "password");
+	    	request.addBodyParameter("username", username);
+	    	request.addBodyParameter("password", password);
 	    
-	    return request;
+	    	return request;
 	    
 	}
 
@@ -290,7 +290,8 @@ public class SantiagoAndroid {
 	 */
 	
 	public void trySignup(Context context, String fname, String username,
-			String password, String type) {
+			String password, String type) 
+	{
 		String url = JobinhoodApi.domain + JobinhoodApi.api_signup;
 		String label = context.getResources().getString(R.string.dialog_signup);
 				
@@ -306,17 +307,18 @@ public class SantiagoAndroid {
 		
 		//execute async-request
 		RequestTask task = new ProgressRequestTask(context, label, JbhResponse.RESPONSE_SIGNUP);
-	    task.execute(request);
+	    	task.execute(request);
 	}
 	
-	private Request buildSignupRequest(String url, String fname, String uname, String pass, String type) {
+	private Request buildSignupRequest(String url, String fname, String uname, String pass, String type) 
+	{
 		Request request = new Request(Verb.POST, url);
 		request.addBodyParameter("userType", type);
-	    request.addBodyParameter("firstName", fname);
-	    request.addBodyParameter("email", uname);
-	    request.addBodyParameter("plainPassword", pass);
+	    	request.addBodyParameter("firstName", fname);
+	    	request.addBodyParameter("email", uname);
+	    	request.addBodyParameter("plainPassword", pass);
 	    
-	    return request;
+	    	return request;
 	}
 	
 	/**
@@ -336,7 +338,7 @@ public class SantiagoAndroid {
 		String label = context.getResources().getString(R.string.dialog_generic);
 		Request request = new Request(Verb.GET, url);
 		RequestTask task = new ProgressRequestTask(context, label, type);
-	    task.execute(request);
+	    	task.execute(request);
 	    
 	}
 	
